@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+/* General Styles */
+
+h1 {
+    font-size: 70px;
+}
+
+/* Page Styles */
+.navigation {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+
+    position:fixed;
+    
+    background-color:white;
+    padding: 15px 0 15px 10vw; 
+    
+}
+
+.navigation a {
+    text-decoration: none;
+    color:black;
+    margin-left: 2.8vw;
+    margin-bottom: 10px;
+
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 900px) {
+    .navigation a {
+        font-size:.9em;
+        margin-left: 2vw;
+    }
+}
+
+
+
+.header {
+    background-color: #121212;
+    color: white;
+    padding: 110px 0 0 0;
+    height: 435px;
+    display:flex;
+    flex-direction: row;
+
+    /*
+    display:flex;
+    justify-content: center;
+    */
+
+}
+
+.header__center {
+    width:41%;
+    height:100%;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.header__center h1 {
+    padding-top:30px;
+}
+
+@media screen and (max-width: 1099px) {
+    .header__center h1 {
+        font-size: 50px;
+    }
+  }
+
+/* Specifics */
+
+.header__center--side {
+    position: relative;
+    left:31vw;
+}
+
+.header__center--side h6 {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.header__center--side span {
+    color:rgb(216, 170, 53);
+    text-decoration: underline;
+    text-decoration-color: white;
+
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
