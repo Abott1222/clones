@@ -60,7 +60,7 @@ html, body {
 h1, h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: .5vh;
 }
 
 /* Your code starts here! */
@@ -114,8 +114,7 @@ h1 {
     color: white;
     padding: 110px 0 0 0;
     height: 435px;
-    display:flex;
-    flex-direction: row;
+    border-bottom: 10px solid rgb(216, 170, 53);
 
     /*
     display:flex;
@@ -132,6 +131,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-content: center;
+
 }
 
 .header__center h1 {
@@ -176,15 +176,49 @@ h1 {
     width: 75%;
     margin: 0 auto;
     min-height: 800px;
+    
+}
+
+.wrapper {
+    width:100%;
+    height:100%;
     background: #EEEEEE;
 }
 
 
 
 /* main */
+.main {
+    background: #FFFFFF;
+    width:70%;
+    min-height:100%;
+    border: 1px solid black;
+}
 
+.main__wrapper {
+    display:flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main img {
+    max-width: 100%;
+}
+
+.main h2 {
+    font-size: 2.5rem;
+}
+    
 
 /* aside */
 .aside {
     background: #F5F6F7;
+    
+    width:30%;
+    min-height:100%;
+}
+
+.aside img {
+    max-width: 100%;
 }
