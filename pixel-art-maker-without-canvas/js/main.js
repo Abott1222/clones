@@ -7,26 +7,17 @@ document.body.addEventListener( 'click', function ( event ) {
   if( elementClass === 'cell' ) {
     event.srcElement.style.background = currentColor;
   }else if(elementClass = "color") {
-		let elementColor = event.srcElement.style.background;
-		currentColor = elementColor;
-		let currentColorViewer = document.querySelector(".currentColor");
-		currentColorViewer.style.background = elementColor;
-		
+        let elementColor = event.srcElement.style.background;
+        
+        //kinda hacky but...
+        if(elementColor.length > 2) {
+		    currentColor = elementColor;
+		    let currentColorViewer = document.querySelector(".currentColor");
+		    currentColorViewer.style.background = elementColor;
+        }
 	};
 } );
 
-
-/*
-let nodes = [...squaresNodes];
-
-nodes.forEach( (tempNode) => {
-	
-	tempNode.addEventListener('click', function(event) {
-		let tmpCell = event.target;
-		tmpCell.style = "background:red";
-	})
-});
-*/
 
 
 const createCell = () => {
