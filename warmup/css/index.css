@@ -209,6 +209,16 @@ h1 {
 .main h2 {
     font-size: 2.5rem;
 }
+
+.main__wrapper p {
+    margin: 2vh 0;
+    font-size: 1.15rem;
+}
+
+/* argggg wtf */
+.main__wrapper p:first-child {
+    margin-top: 50vh;
+}
     
 
 /* aside */
